@@ -19,5 +19,9 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet(name = "ControleIMC", urlPatterns = {"/ControleIMC"})
 public class SalaController extends HttpServlet {
-    
+    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        response.setContentType("text/html;charset=UTF-8");
+        
+    }
 }
